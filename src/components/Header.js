@@ -55,11 +55,6 @@ const Header = () => {
                 <>
                   {cart.map((prod) => (
                     <span className="cartitem" key={prod.id}>
-                      <img
-                        src={prod.image}
-                        className="cartItemImg"
-                        alt={prod.name}
-                      />
                       <div className="cartItemDetail">
                         <span>{prod.name}</span>
                         <span>₹ {prod.price.split(".")[0]}</span>

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Button, Col, Form, Image, ListGroup, Row } from "react-bootstrap";
+import { Button, Col, Form, ListGroup, Row } from "react-bootstrap";
 import { AiFillDelete } from "react-icons/ai";
 import { CartState } from "../context/Context";
 import Rating from "./Rating";
@@ -24,9 +24,6 @@ const Cart = () => {
           {cart.map((prod) => (
             <ListGroup.Item key={prod.id}>
               <Row>
-                <Col md={2}>
-                  <Image src={prod.image} alt={prod.name} fluid rounded />
-                </Col>
                 <Col md={2}>
                   <span>{prod.name}</span>
                 </Col>
