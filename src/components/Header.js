@@ -7,6 +7,7 @@ import {
   Dropdown,
   FormControl,
   Nav,
+  Image,
   Navbar,
 } from "react-bootstrap"; // Import components from react-bootstrap for UI elements
 import { Link, useLocation } from "react-router-dom"; // Import Link and useLocation from react-router-dom for routing
@@ -25,6 +26,7 @@ const Header = () => {
     <Navbar bg="dark" variant="dark" style={{ height: 80 }}> {/* Set up a dark navbar */}
       <Container>
         <Navbar.Brand>
+        <Image src=".././favicon.ico" width={50} height={50}/>
           <Link to="/">Shopping Cart</Link> {/* Link to the home page */}
         </Navbar.Brand>
 
