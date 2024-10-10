@@ -80,9 +80,6 @@ const Cart = () => {
       <div className="filters summary">
         <span className="title">Subtotal ({cart.length}) items</span>
         <span style={{ fontWeight: 700, fontSize: 20 }}>Total: ₹ {total}</span> {/* Displaying total amount */}
-        <Button type="button" disabled={cart.length === 0}>
-          Proceed to Checkout
-        </Button>
       </div>
     </div>
   );
